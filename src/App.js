@@ -6,6 +6,8 @@ import RecipeData from "./RecipeData"
 
 function App() {
 
+  const url = `${process.env.REACT_APP_API_BASE_URL}`
+
   const [recipes, setRecipes] = useState(RecipeData);
 
   // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
